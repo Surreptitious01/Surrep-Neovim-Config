@@ -25,9 +25,6 @@ return {
 			lspconfig.harper_ls.setup({
         capabilities = capabilities
       })
-			lspconfig.jdtls.setup({
-        capabilities = capabilities
-      })
 
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 		end,
