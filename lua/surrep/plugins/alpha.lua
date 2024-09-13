@@ -21,6 +21,7 @@ return {
 		dashboard.section.buttons.val = {
 			dashboard.button("ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
 			dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
+      dashboard.button("wr", "󰁯  > Restore Session", "<cmd>SessionRestore<CR>"),
 			dashboard.button("fm", "  > Open File Manager", "<cmd>Ex<CR>"),
 		}
 
