@@ -20,9 +20,9 @@ return {
 		-- Set menu
 		dashboard.section.buttons.val = {
 			dashboard.button("ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
-			dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
-      dashboard.button("wr", "󰁯  > Restore Session", "<cmd>SessionRestore<CR>"),
 			dashboard.button("fm", "  > Open File Manager", "<cmd>Ex<CR>"),
+      dashboard.button("wr", "󰁯  > Restore Session", "<cmd>SessionRestore<CR>"),
+			dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
 		}
 
 		-- Send config to alpha
@@ -30,5 +30,7 @@ return {
 
 		-- Disable folding on alpha buffer
 		vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
+    
+    vim.keymap.set("n", "<C-a>", "<cmd>Alpha<CR>", {})
 	end,
 }
