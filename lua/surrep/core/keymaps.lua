@@ -1,7 +1,5 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>fm", vim.cmd.Ex)
-
 vim.keymap.set("n", "<leader>es", ":nohl<CR>", {})
 
 --window management

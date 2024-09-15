@@ -1,5 +1,7 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "mark_actions",
+        "clipboard_actions"
     ]
 }
