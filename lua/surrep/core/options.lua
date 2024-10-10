@@ -21,3 +21,6 @@ vim.opt.smartcase = true
 -- split windows
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+-- sets cursor style to block
+vim.cmd("set guicursor=n-v-c-i:block")

@@ -31,6 +31,15 @@ return {
       lspconfig.jdtls.setup({
         capabilities = capabilities
       })
+      lspconfig.gdscript.setup({
+        capabilities = capabilities
+      })
+      lspconfig.rust_analyzer.setup({
+        capabilities = capabilities
+      })
+      lspconfig.biome.setup({
+        capabilities = capabilities
+      })
 
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
     end,
