@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "clangd", "basedpyright", "jdtls" },
+        ensure_installed = { "lua_ls", "clangd", "basedpyright", "jdtls", "denols"},
       })
     end,
   },
@@ -20,6 +20,9 @@ return {
 
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.denols.setup({
         capabilities = capabilities
       })
       lspconfig.clangd.setup({
@@ -35,9 +38,6 @@ return {
         capabilities = capabilities
       })
       lspconfig.rust_analyzer.setup({
-        capabilities = capabilities
-      })
-      lspconfig.biome.setup({
         capabilities = capabilities
       })
 
